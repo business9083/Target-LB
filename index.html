@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Target_LB — таргетолог Meta Ads | бронювання консультації</title>
+  <meta name="description" content="Target_LB (Vadym Lebedenko) — таргетолог Meta Ads. Ліди/продажі для сервісів і експертів. Запишись на дзвінок або замов безкоштовний аудит." />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#101722;
+      --muted:#a8b3c4;
+      --text:#e9eef7;
+      --brand:#f6c400;
+      --brand2:#7c4dff;
+      --line:rgba(255,255,255,.10);
+      --ok:#22c55e;
+      --bad:#ef4444;
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius: 22px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0; background:radial-gradient(1200px 800px at 20% -10%, rgba(124,77,255,.25), transparent 55%),
+                                  radial-gradient(900px 700px at 110% 0%, rgba(246,196,0,.18), transparent 55%),
+                                  var(--bg);
+              color:var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;}
+    a{color:inherit}
+    .container{max-width:1100px; margin:0 auto; padding:22px}
+    .nav{position:sticky; top:0; z-index:20; backdrop-filter: blur(10px);
+         background:rgba(11,15,20,.72); border-bottom:1px solid var(--line)}
+    .navInner{display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 22px; max-width:1100px; margin:0 auto;}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:900; letter-spacing:.3px}
+    .dot{width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg, var(--brand), var(--brand2)); box-shadow:0 0 0 6px rgba(246,196,0,.12)}
+    .navLinks{display:flex; gap:16px; flex-wrap:wrap; justify-content:flex-end}
+    .navLinks a{opacity:.85; text-decoration:none; font-weight:700; font-size:13px; padding:8px 10px; border-radius:999px}
+    .navLinks a:hover{opacity:1; background:rgba(255,255,255,.06)}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; border:1px solid var(--line); background:rgba(255,255,255,.06);
+         color:var(--text); padding:12px 14px; border-radius:999px; text-decoration:none; font-weight:900; cursor:pointer; user-select:none}
+    .btn:hover{transform: translateY(-1px); box-shadow:0 10px 26px rgba(0,0,0,.35)}
+    .btnPrimary{background:var(--brand); color:#111; border-color:rgba(0,0,0,.12)}
+    .btnPrimary:hover{box-shadow:0 18px 40px rgba(246,196,0,.18)}
+    .btnGhost{background:transparent}
+    .hero{padding:46px 0 10px}
+    .heroGrid{display:grid; grid-template-columns: 1.2fr .8fr; gap:22px}
+    .hTitle{font-size: clamp(30px, 4vw, 52px); line-height:1.05; margin:0 0 12px; letter-spacing:-.7px}
+    .hSub{margin:0; color:var(--muted); font-size:16px; line-height:1.6}
+    .pillRow{display:flex; gap:10px; flex-wrap:wrap; margin:16px 0 18px}
+    .pill{border:1px solid var(--line); background:rgba(255,255,255,.05); padding:10px 12px; border-radius:999px; font-weight:800; font-size:12px; color:#d7e0ef}
+    .heroCard{border:1px solid var(--line); background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+              border-radius: var(--radius); padding:18px; box-shadow: var(--shadow)}
+    .cardTitle{font-weight:1000; letter-spacing:.2px; margin:0 0 6px}
+    .muted{color:var(--muted)}
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:14px}
+    .mini{border:1px solid var(--line); background:rgba(0,0,0,.22); border-radius:18px; padding:14px}
+    .mini b{display:block; font-size:18px}
+    .mini span{color:var(--muted); font-size:12px}
+    .section{padding:26px 0}
+    .secTitle{font-size:22px; margin:0 0 10px; letter-spacing:-.2px}
+    .secSub{margin:0 0 18px; color:var(--muted); line-height:1.65}
+    .cards{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    .card{border:1px solid var(--line); background:rgba(255,255,255,.04); border-radius:var(--radius); padding:16px}
+    .card h3{margin:0 0 8px; font-size:16px}
+    .card p{margin:0; color:var(--muted); line-height:1.6; font-size:14px}
+    .list{margin:12px 0 0; padding:0 0 0 18px; color:var(--muted); line-height:1.7}
+    .split{display:grid; grid-template-columns: 1fr 1fr; gap:16px}
+    .steps{display:grid; gap:10px}
+    .step{display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); background:rgba(255,255,255,.035); border-radius:18px; padding:14px}
+    .num{width:28px; height:28px; border-radius:10px; background:rgba(246,196,0,.18); border:1px solid rgba(246,196,0,.25);
+         display:flex; align-items:center; justify-content:center; font-weight:1000; color:var(--brand)}
+    .faq{display:grid; gap:10px}
+    details{border:1px solid var(--line); background:rgba(255,255,255,.03); border-radius:18px; padding:12px 14px}
+    summary{cursor:pointer; font-weight:900}
+    details p{color:var(--muted); line-height:1.65; margin:10px 0 0}
+    .formWrap{border:1px solid var(--line); background:rgba(255,255,255,.04); border-radius:var(--radius); padding:18px}
+    .formGrid{display:grid; grid-template-columns: 1fr 1fr; gap:12px}
+    label{font-size:12px; font-weight:900; color:#d7e0ef; display:block; margin:0 0 6px}
+    input, textarea, select{
+      width:100%; padding:12px 12px; border-radius:16px; border:1px solid rgba(255,255,255,.12);
+      background:rgba(0,0,0,.25); color:var(--text); outline:none;
+    }
+    textarea{min-height:112px; resize:vertical}
+    input:focus, textarea:focus, select:focus{border-color: rgba(246,196,0,.55); box-shadow:0 0 0 4px rgba(246,196,0,.12)}
+    .full{grid-column:1/-1}
+    .hint{font-size:12px; color:var(--muted); line-height:1.5}
+    .err{display:none; margin-top:10px; border-radius:14px; padding:10px 12px; border:1px solid rgba(239,68,68,.35); background:rgba(239,68,68,.12); color:#ffd7d7; font-weight:800}
+    .ok{display:none; margin-top:10px; border-radius:14px; padding:10px 12px; border:1px solid rgba(34,197,94,.35); background:rgba(34,197,94,.12); color:#d7ffe7; font-weight:900}
+    .ctaRow{display:flex; flex-wrap:wrap; gap:10px; margin-top:12px}
+    .footer{padding:26px 0 40px; color:var(--muted); border-top:1px solid var(--line); margin-top:18px}
+    .small{font-size:12px}
+    .modalOverlay{position:fixed; inset:0; background:rgba(0,0,0,.55); display:none; align-items:center; justify-content:center; padding:18px; z-index:50}
+    .modal{max-width:720px; width:100%; border-radius:22px; border:1px solid var(--line); background:rgba(16,23,34,.98); box-shadow: var(--shadow); overflow:hidden}
+    .modalHead{padding:14px 16px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line)}
+    .modalHead b{font-size:14px}
+    .modalBody{padding:16px}
+    .pre{white-space:pre-wrap; background:rgba(0,0,0,.25); border:1px solid rgba(255,255,255,.10); border-radius:16px; padding:12px; color:#dbe7fb; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; font-size:12px}
+    .contactGrid{display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px; margin-top:12px}
+    .contactBtn{padding:12px 14px; border-radius:16px; font-weight:1000; text-decoration:none; text-align:center; border:1px solid var(--line); background:rgba(255,255,255,.06)}
+    .contactBtn.yellow{background:var(--brand); color:#111; border-color:rgba(0,0,0,.12)}
+    .contactBtn.dark{background:#111; color:#fff; border-color:rgba(255,255,255,.08)}
+    .contactBtn.gray{background:#f2f3f5; color:#111; border-color:rgba(0,0,0,.12)}
+    .contactBtn:hover{transform: translateY(-1px)}
+    @media (max-width: 920px){
+      .heroGrid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      .formGrid{grid-template-columns:1fr}
+      .contactGrid{grid-template-columns:1fr}
+      .navLinks{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="navInner">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Target_LB</span>
+      </div>
+      <div class="navLinks">
+        <a href="#services">Послуги</a>
+        <a href="#cases">Кейси</a>
+        <a href="#process">Процес</a>
+        <a href="#booking">Бронювання</a>
+      </div>
+      <div style="display:flex; gap:10px; align-items:center">
+        <a class="btn btnGhost" href="https://www.instagram.com/lebedenkkko/" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btnPrimary" href="#booking">Забронювати</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hero" id="top">
+    <div class="heroGrid">
+      <div>
+        <h1 class="hTitle">Meta Ads, які приносять заявки, а не “гарні цифри”.</h1>
+        <p class="hSub">
+          Я — <b>Target_LB</b> (Vadym Lebedenko). Налаштовую рекламу в Instagram/Facebook під сервісні бізнеси та експертів.
+          Фокус: <b>ліди</b>, <b>бронювання</b>, <b>продажі</b> і нормальна аналітика без ілюзій.
+        </p>
+
+        <div class="pillRow">
+          <span class="pill">Під ключ: стратегія → креативи → запуск</span>
+          <span class="pill">Тестування 7–14 днів</span>
+          <span class="pill">Аналітика + оптимізація</span>
+          <span class="pill">Без “зливу бюджету”</span>
+        </div>
+
+        <div class="ctaRow">
+          <a class="btn btnPrimary" href="#booking">Бронювати дзвінок</a>
+          <a class="btn" href="#services">Що я роблю</a>
+        </div>
+
+        <p class="hint" style="margin-top:12px">
+          Хочеш швидко: заповни форму → я зв’яжусь і підтверджу час. Ніяких передоплат для першого контакту.
+        </p>
+      </div>
+
+      <div class="heroCard">
+        <p class="cardTitle">Швидко про мене</p>
+        <p class="muted" style="margin-top:0">
+          2+ роки практики. Працював з сервісами, локальними бізнесами, експертами, нерухомістю.
+          Люблю конкретику: бюджет → KPI → креативи → тест → масштабування.
+        </p>
+        <div class="grid2" style="margin-top:14px">
+          <div class="mini">
+            <b>Ціль</b>
+            <span>Стабільні звернення (а не “охоплення”) </span>
+          </div>
+          <div class="mini">
+            <b>Підхід</b>
+            <span>Гіпотези + швидкі тести</span>
+          </div>
+          <div class="mini">
+            <b>Звітність</b>
+            <span>Щотижневі підсумки + план дій</span>
+          </div>
+          <div class="mini">
+            <b>Комунікація</b>
+            <span>Без води. По ділу.</span>
+          </div>
+        </div>
+        <div class="ctaRow" style="margin-top:14px">
+          <a class="btn btnPrimary" href="#booking">Записатися</a>
+          <a class="btn" href="https://ig.me/m/lebedenkkko" target="_blank" rel="noopener">Написати в IG</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="services">
+    <h2 class="secTitle">Послуги</h2>
+    <p class="secSub">Те, що реально потрібно, щоб реклама працювала, а не просто крутилась.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Meta Ads “під ключ”</h3>
+        <p>Стратегія, структура кабінету, аудиторії, креативи, запуск, оптимізація.</p>
+        <ul class="list">
+          <li>Лід-ген / бронювання / продажі</li>
+          <li>Креативи: статика + відео</li>
+          <li>Оптимізація під KPI</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Аудит реклами</h3>
+        <p>Розбір поточного кабінету: де витоки бюджету і як швидко підняти результат.</p>
+        <ul class="list">
+          <li>Структура кампаній</li>
+          <li>Креативи та оффери</li>
+          <li>Точки росту</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Фаннел + “прокладка”</h3>
+        <p>Ленд/калькулятор/форма, щоб підвищити конверсію з реклами і не втрачати лідів.</p>
+        <ul class="list">
+          <li>Швидке завантаження</li>
+          <li>Піксель + події</li>
+          <li>Збір заявок у таблицю</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="cases">
+    <h2 class="secTitle">Кейси (приклади формату)</h2>
+    <p class="secSub">
+      Тут можна вставити твої реальні цифри/скріни. Поки що залишив шаблони блоків, щоб швидко підмінити контент.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Локальний сервіс</h3>
+        <p><b>Результат:</b> стабільні заявки щодня після 10–14 днів тестів.</p>
+        <p class="muted" style="margin-top:10px">Що зробили: новий оффер + 3 креативи + ретаргет “теплих”.</p>
+      </div>
+      <div class="card">
+        <h3>Експерт/курс</h3>
+        <p><b>Результат:</b> знизили CPL, підняли конверсію в оплату.</p>
+        <p class="muted" style="margin-top:10px">Що зробили: преленд + UGC відео + тест 5 аудиторій.</p>
+      </div>
+      <div class="card">
+        <h3>Нерухомість</h3>
+        <p><b>Результат:</b> ліди з високим наміром + прогрів через контент.</p>
+        <p class="muted" style="margin-top:10px">Що зробили: сегментація + instant form/DM + LAL.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="process">
+    <h2 class="secTitle">Як ми працюємо</h2>
+    <p class="secSub">Чітко. По кроках. Без “ми ще подумаємо”.</p>
+
+    <div class="split">
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div><b>Бриф</b><div class="muted small">Ніша, ціль, бюджет, гео, конкурентне середовище.</div></div></div>
+        <div class="step"><div class="num">2</div><div><b>Стратегія</b><div class="muted small">Оффер, позиціонування, креативи, структура кампаній.</div></div></div>
+        <div class="step"><div class="num">3</div><div><b>Запуск</b><div class="muted small">Піксель/події, ленд, запуск тестів 7–14 днів.</div></div></div>
+        <div class="step"><div class="num">4</div><div><b>Оптимізація</b><div class="muted small">Відсікаємо шум, масштабуємо робочі зв’язки.</div></div></div>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>Скільки потрібно бюджету?</summary>
+          <p>Залежить від ніші. Для старту зазвичай краще мати бюджет на тестування 7–14 днів, щоб зібрати дані й не робити “висновки за 2 дні”.</p>
+        </details>
+        <details>
+          <summary>Чи робиш креативи?</summary>
+          <p>Так. Підбираємо формат (статика/UGC/відео), пишу структуру, тексти, сценарії. Якщо є команда, можу давати ТЗ.</p>
+        </details>
+        <details>
+          <summary>Які гарантії?</summary>
+          <p>Гарантій “100 лідів за 3 дні” не буде. Буде прогноз, прозорий тест і конкретні дії, які ведуть до результату.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="booking">
+    <h2 class="secTitle">Бронювання</h2>
+    <p class="secSub">
+      Заповни форму. Після відправки я зв’яжусь, щоб підтвердити дзвінок і підібрати зручний час.
+    </p>
+
+    <div class="formWrap">
+      <form id="bookingForm">
+        <div class="formGrid">
+          <div>
+            <label>Ім’я *</label>
+            <input id="name" placeholder="Твоє ім’я" required />
+          </div>
+          <div>
+            <label>Телефон *</label>
+            <input id="phone" placeholder="+1 (___) ___-____" required />
+          </div>
+          <div>
+            <label>Email</label>
+            <input id="email" type="email" placeholder="you@email.com" />
+          </div>
+          <div>
+            <label>Ніша/бізнес</label>
+            <input id="niche" placeholder="Клінінг / нерухомість / б’юті / експерт..." />
+          </div>
+          <div class="full">
+            <label>Що хочеш отримати? (ціль) *</label>
+            <select id="goal" required>
+              <option value="" selected disabled>Обери ціль</option>
+              <option>Ліди / заявки</option>
+              <option>Бронювання / записи</option>
+              <option>Продажі / покупки</option>
+              <option>Аудит існуючої реклами</option>
+            </select>
+          </div>
+          <div>
+            <label>Орієнтовний місячний бюджет</label>
+            <select id="budget">
+              <option value="" selected>Не знаю</option>
+              <option>$300–$800</option>
+              <option>$800–$1500</option>
+              <option>$1500–$3000</option>
+              <option>$3000+</option>
+            </select>
+          </div>
+          <div>
+            <label>Бажаний час/день для дзвінка</label>
+            <input id="preferred" placeholder="Напр., Пн 18:00 або Сб 12–14" />
+          </div>
+          <div class="full">
+            <label>Коротко про задачу</label>
+            <textarea id="notes" placeholder="Що продаєш? Де? Який середній чек? Що вже пробували?"></textarea>
+            <div class="hint">Після “Забронювати” заявка: (1) збережеться у таблицю/на email (якщо ввімкнеш webhook), (2) буде скопійована і відкриється Instagram для швидкого контакту.</div>
+          </div>
+        </div>
+
+        <div class="err" id="errBox">Будь ласка, заповни обов’язкові поля: ім’я, телефон і ціль.</div>
+        <div class="ok" id="okBox">Готово ✅ Заявку підготовлено. Відкрив інструкцію та кнопки для контакту.</div>
+
+        <div class="ctaRow">
+          <button type="submit" class="btn btnPrimary" style="border:none">Забронювати</button>
+          <a class="btn" href="https://ig.me/m/lebedenkkko" target="_blank" rel="noopener">Написати в Instagram</a>
+          <a class="btn" href="tel:+16476973002">Подзвонити</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer">
+    <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between">
+      <div>
+        <b>Target_LB</b> <span class="small">· Meta Ads · Instagram/Facebook</span><br/>
+        <span class="small">Instagram: </span><a class="small" href="https://www.instagram.com/lebedenkkko/" target="_blank" rel="noopener">@lebedenkkko</a>
+      </div>
+      <div class="small">
+        © <span id="y"></span> Target_LB. All rights reserved. (Так, юридично це майже нічого не означає, але виглядає солідно.)
+      </div>
+    </div>
+  </div>
+
+  <div class="modalOverlay" id="modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+      <div class="modalHead">
+        <b id="mTitle">Надіслати заявку (останній крок)</b>
+        <button class="btn btnGhost" id="closeModal" type="button">Закрити</button>
+      </div>
+      <div class="modalBody">
+        <div class="pill" style="display:inline-flex; gap:10px; align-items:center">
+          <span style="color:var(--ok)">✓</span> Повідомлення скопійовано. Встав його в DM.
+        </div>
+
+        <p class="muted" style="margin:12px 0 10px">
+          Натисни Instagram, встав текст і відправ. Я відповім і підтверджу час.
+        </p>
+
+        <div class="pre" id="msgPreview">—</div>
+
+        <div class="contactGrid">
+          <a class="contactBtn yellow" id="igBtn" href="https://ig.me/m/lebedenkkko" target="_blank" rel="noopener">Відкрити Instagram</a>
+          <a class="contactBtn dark" href="mailto:northstarclean24@gmail.com?subject=Target_LB%20Booking%20Request">Email</a>
+          <a class="contactBtn gray" href="tel:+16476973002">Подзвонити</a>
+        </div>
+
+        <p class="hint" style="margin-top:12px">Після відправки: я зателефоную/напишу, щоб підтвердити бронювання та підібрати зручний час.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ===== Optional webhook (Google Apps Script Web App) =====
+    // If you want leads in Google Sheets/email: paste your Web App URL here (with token).
+    // Example: https://script.google.com/macros/s/XXXXX/exec?token=YOUR_SECRET
+    const LEAD_WEBHOOK_URL = "";
+
+    const $ = (id) => document.getElementById(id);
+    $("y").textContent = new Date().getFullYear();
+
+    function getUTM() {
+      const p = new URLSearchParams(window.location.search);
+      const keys = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term"];
+      const out = {};
+      keys.forEach(k => { const v = p.get(k); if (v) out[k] = v; });
+      return out;
+    }
+
+    function sendLead(payload) {
+      if (!LEAD_WEBHOOK_URL) return;
+      const body = JSON.stringify(payload);
+
+      try {
+        if (navigator.sendBeacon) {
+          const blob = new Blob([body], { type:"text/plain;charset=UTF-8" });
+          const ok = navigator.sendBeacon(LEAD_WEBHOOK_URL, blob);
+          if (ok) return;
+        }
+      } catch(e){}
+
+      try {
+        fetch(LEAD_WEBHOOK_URL, {
+          method:"POST",
+          mode:"no-cors",
+          headers: { "Content-Type": "text/plain;charset=UTF-8" },
+          body,
+          keepalive: true
+        }).catch(()=>{});
+      } catch(e){}
+    }
+
+    function buildMessage(data){
+      return `Hi! I'd like to book a call with Target_LB (Meta Ads).\n\n` +
+             `Name: ${data.name}\n` +
+             `Phone: ${data.phone}\n` +
+             `Email: ${data.email}\n` +
+             `Business/niche: ${data.niche}\n` +
+             `Goal: ${data.goal}\n` +
+             `Budget: ${data.budget}\n` +
+             `Preferred time: ${data.preferred}\n` +
+             `Notes: ${data.notes}\n\n` +
+             `Sent from: ${data.page_url}`;
+    }
+
+    async function copyToClipboard(text){
+      try{
+        await navigator.clipboard.writeText(text);
+        return true;
+      }catch(e){
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        ta.style.position="fixed";
+        ta.style.opacity="0";
+        document.body.appendChild(ta);
+        ta.select();
+        try{ document.execCommand("copy"); }catch(_){}
+        document.body.removeChild(ta);
+        return true;
+      }
+    }
+
+    function openModal(msg){
+      $("msgPreview").textContent = msg;
+      $("modal").style.display = "flex";
+    }
+    function closeModal(){
+      $("modal").style.display = "none";
+    }
+    $("closeModal").addEventListener("click", closeModal);
+    $("modal").addEventListener("click", (e)=>{ if(e.target === $("modal")) closeModal(); });
+
+    const form = $("bookingForm");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      $("errBox").style.display="none";
+      $("okBox").style.display="none";
+
+      const data = {
+        ts: new Date().toISOString(),
+        page_url: window.location.href,
+        utm: getUTM(),
+        name: $("name").value.trim(),
+        phone: $("phone").value.trim(),
+        email: $("email").value.trim(),
+        niche: $("niche").value.trim(),
+        goal: $("goal").value,
+        budget: $("budget").value,
+        preferred: $("preferred").value.trim(),
+        notes: $("notes").value.trim()
+      };
+
+      if(!data.name || !data.phone || !data.goal){
+        $("errBox").style.display="block";
+        if(!data.name) $("name").focus();
+        else if(!data.phone) $("phone").focus();
+        else $("goal").focus();
+        return;
+      }
+
+      const msg = buildMessage(data);
+      await copyToClipboard(msg);
+
+      sendLead({
+        ts: data.ts,
+        page_url: data.page_url,
+        utm: data.utm,
+        booking: {
+          name: data.name,
+          phone: data.phone,
+          email: data.email,
+          address: "",
+          preferred_dates_times: data.preferred,
+          pay_cash: "",
+          pets: "",
+          notes: `${data.niche}\nGoal: ${data.goal}\nBudget: ${data.budget}\n\n${data.notes}`
+        },
+        estimate: {
+          bedrooms: "", bathrooms: "", kitchens: "", floors: "", dining_rooms: "", basements: "",
+          area: "", unit: "",
+          billable_hours: "", on_site_hours: "", min_price: "", max_price: "", specialists: ""
+        },
+        message: msg
+      });
+
+      $("okBox").style.display="block";
+      openModal(msg);
+    });
+  </script>
+</body>
+</html>
